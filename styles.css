@@ -1,0 +1,39 @@
+body{
+    background-color: green;
+    margin: 0;
+    padding: 0;
+}
+.container{
+    display: grid; 
+    grid-template: repeat(10,1fr) / repeat(10,1fr);
+    height: 100vh;
+}
+.yellow {
+grid-row: 5/10;
+grid-column: 1/2;
+background-color: yellow;
+}
+.orange {
+    grid-row: 7/9;
+    grid-column: 1/4;
+    background-color: tomato;
+    opacity: .9;
+}
+.pink1{
+    grid-row: 5/8;
+    grid-column: 6/9;
+    border: 4px solid hotpink;
+}
+.pink2{
+    grid-row: 3/9;
+    grid-column: 7/10;
+    border: 4px solid hotpink;
+}
+.pink3{
+    grid-row: 10/11;
+    grid-column: 6/11;
+    background-color: hotpink;
+    display:flex; 
+    justify-content: center; 
+    align-items: center;
+}
